@@ -1,0 +1,159 @@
+body {
+    background-color: black;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#container {
+ display:block; 
+ }
+#splash_video{
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+#background_image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: 3;
+}
+#button_splash{
+	z-index: 5;
+	position: absolute;
+	top: 86.85%;
+	left: 2.08%;
+	height: 9.26%;
+}
+#button_project{
+	z-index: 6;
+	position: absolute;
+	top: 77.78%;
+	left: 87.5%;
+	height: 18.52%;
+}
+
+#button_project:active{
+	display: none;
+}
+#button_project_pressed{
+	z-index: 5;
+	position: absolute;
+	top: 77.78%;
+	left: 87.5%;
+	height: 18.52%;
+}
+#menu{
+	display: none;
+	z-index: 10;
+	background-color: #C9D7E0;
+	position: absolute;
+	top: 0%;
+	left: 84.375%;
+	height: 100%;
+	width: 15.625%;
+}
+#menu_button_5rooms{
+	z-index: 12;
+	position: absolute;
+	top: 3.70%;
+	left: 16.67%;
+	height: 18.52%;
+	
+}
+#menu_button_5rooms:active{
+	display: none;
+}
+#menu_button_5rooms_pressed{
+	z-index: 11;
+	position: absolute;
+	top: 3.70%;
+	left: 16.67%;
+	height: 18.52%;
+}
+#menu_button_4rooms{
+	z-index: 12;
+	position: absolute;
+	top: 39.35%;
+	left: 16.67%;
+	height: 18.52%;
+	
+}
+#menu_button_4rooms:active{
+	display: none;
+}
+#menu_button_4rooms_pressed{
+	z-index: 11;
+	position: absolute;
+	top: 39.35%;
+	left: 16.67%;
+	height: 18.52%;
+}
+#menu_button_pent{
+	z-index: 12;
+	position: absolute;
+	top: 75%;
+	left: 16.67%;
+	height: 18.52%;
+	
+}
+#menu_button_pent:active{
+	display: none;
+}
+#menu_button_pent_pressed{
+	z-index: 11;
+	position: absolute;
+	top: 75%;
+	left: 16.67%;
+	height: 18.52%;
+}
+/*
+<div id="menu">
+		<image id="menu_button_5rooms_pressed" onclick="menuButton5Clicked()">
+		<image id="menu_button_5rooms" onclick="menuButton5Clicked()">
+		<image id="menu_button_4rooms_pressed" onclick="menuButton4Clicked()">
+		<image id="menu_button_4rooms" onclick="menuButton4Clicked()">
+		<image id="menu_button_pent_pressed" onclick="menuButtonPentClicked()">
+		<image id="menu_button_pent" onclick="menuButtonPentClicked()">
+*/
+
+@media only screen and (orientation:portrait){
+	#container {  
+    height: 100vw;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    }
+    #splash_video{
+		height: 100vw;
+    }
+	#button_project{
+		top: 77.78vw;
+		left: 87.5vh;
+	}
+	#button_project_pressed{
+		top: 77.78vw;
+		left: 87.5vh;
+	}
+	#menu{
+		top: 0vw;
+		left: 84.375vh;
+		width: 15.625vh;
+	}
+}
+@media only screen and (orientation:landscape){
+	#container {  
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+     transform: rotate(0deg);
+	}
+	#splash_video{
+	height: 100vh;
+    }
+}

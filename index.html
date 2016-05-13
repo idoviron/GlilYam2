@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, height=device-height" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="css/animate.min.css" rel="stylesheet">
+<script src="js/script.js"></script>
+</head>
+<body>
+<div id="container">
+    <!-- your html for your website -->
+    <video id="splash_video" autoplay onended="videoEnded()">
+		<source src="videos/intro_720.mp4" type="video/mp4">
+	</video>
+	<image id="background_image">
+	<image id="button_splash" src="images/btn_skip.png" onclick="buttonSplashClicked()">
+	<image id="button_project_pressed" onclick="buttonProjectClicked()">
+	<image id="button_project" onclick="buttonProjectClicked()">
+	<div id="menu">
+		<image id="menu_button_5rooms_pressed" src="images/btn_rooms_5_press.png" onclick="menuButton5Clicked()">
+		<image id="menu_button_5rooms" src="images/btn_rooms_5_normal.png" onclick="menuButton5Clicked()">
+		<image id="menu_button_4rooms_pressed" src="images/btn_rooms_4_press.png" onclick="menuButton4Clicked()">
+		<image id="menu_button_4rooms" src="images/btn_rooms_4_normal.png" onclick="menuButton4Clicked()">
+		<image id="menu_button_pent_pressed" src="images/btn_rooms_pent_press.png" onclick="menuButtonPentClicked()">
+		<image id="menu_button_pent" src="images/btn_rooms_pent_normal.png" onclick="menuButtonPentClicked()">
+	</div>
+</div>
+</body>
